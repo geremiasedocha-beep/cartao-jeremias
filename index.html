@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1f3a">
+  <meta name="description" content="Cartão de visita digital de Jeremias Filipe, Engenheiro Informático.">
+  <title>Jeremias Filipe | Cartão Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Cartão digital - início"><span class="brand-mark">JF</span><span>Cartão Digital</span></a>
+      <span class="availability"><span class="pulse"></span> Contacto profissional</span>
+    </header>
+
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> PERFIL PROFISSIONAL</p>
+        <h1>Jeremias<br><span>Filipe.</span></h1>
+        <p class="role">Engenheiro Informático</p>
+        <p class="intro">Tecnologia, soluções digitais e conexões profissionais. Guarda os meus contactos ou fala comigo diretamente.</p>
+        <div class="actions">
+          <a class="button button-primary" href="https://wa.me/244926434994" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.3 8.3 0 0 1-12.3 7.3L3 20.5l1.5-5a8.3 8.3 0 1 1 16-3.7Z"/><path d="M9 8.2c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.5l.7 1.7c.1.3.1.5-.1.7l-.5.6c-.2.2-.2.4 0 .6.5.9 1.2 1.6 2.1 2 .2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.7-.1l1.6.8c.3.2.4.3.4.5 0 .3-.2 1.1-.7 1.5-.5.5-1.2.7-2 .5-1-.2-2.3-.8-3.7-2.1-1.1-1-2-2.4-2.2-3.4-.2-.8 0-1.5.4-2Z"/></svg>
+            Falar no WhatsApp
+          </a>
+          <button class="button button-secondary" id="saveContact" type="button">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5"/><path d="M5 16v4h14v-4"/></svg>
+            Guardar contacto
+          </button>
+        </div>
+        <div class="contact-list">
+          <a href="tel:+244926434994" class="contact-row"><span class="contact-icon">☎</span><span><small>TELEFONE</small><strong>+244 926 434 994</strong></span><span class="row-arrow">↗</span></a>
+          <a href="mailto:edochageremiaspindi@gmail.com" class="contact-row"><span class="contact-icon">@</span><span><small>E-MAIL</small><strong class="email-value">edochageremiaspindi@gmail.com</strong></span><span class="row-arrow">↗</span></a>
+        </div>
+      </div>
+
+      <aside class="qr-panel" aria-labelledby="qr-heading">
+        <div class="panel-top"><span class="panel-label">CONEXÃO RÁPIDA</span><span class="panel-number">01 / 01</span></div>
+        <div class="qr-frame"><div id="qrcode" aria-label="Código QR para abrir este cartão"></div><div id="qrFallback" class="qr-fallback" hidden>Publica o site na Vercel para gerar o QR Code com o endereço definitivo.</div></div>
+        <h2 id="qr-heading">Leva-me contigo.</h2>
+        <p>Digitaliza o código para abrir este cartão e guardar os meus dados.</p>
+        <button class="text-button" id="downloadQr" type="button">Descarregar QR Code <span>↓</span></button>
+        <div class="qr-url" id="qrUrl">O QR Code usará o endereço público deste site.</div>
+      </aside>
+    </section>
+
+    <footer class="footer"><span>© <span id="year"></span> Jeremias Filipe</span><span>Cartão de visita digital <i></i> Angola</span></footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
